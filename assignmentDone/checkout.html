@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
+    <script src="https://kit.fontawesome.com/ac610dfd2d.js" crossorigin="anonymous"></script>
+    <title>Checkout page</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- We start with the header elements. Contains all the nav menus and the logo, etc -->
+		<header>
+            
+			<!-- An unordered list to display the first nav menu -->
+			<nav class="contact">
+				<ul>
+                    <li><a href="#" class="test">Basket</a></li>
+                    <li><a href="checkout.html" class="test">Checkout</a></li>
+					<li><a href="#" class="test">My Account</a></li>
+                 </ul>
+            </nav>
+			
+			<!-- Here is the HTML code that displays the phone number and
+			the email. Click on any one of them and you are taken to the
+			appropriate action. -->
+            <div class="top-line">
+					<i class="fas fa-mobile-alt"> <a href="tel:+353(0)614486165">  +353(0)614486165</a></i>  <i class="fas fa-at">  <a href="mailto:info@millflowers.ie">  info@millflowers.ie</a></i>
+			</div>
+			               
+			<!-- Here is the webpage logo using the figure and
+			figcaption tag to define the photo and its caption						    -->
+			<div class="mainie">
+                <figure class="logo">
+					<img src="images/logo3.png">
+						<figcaption> <!-- The figcaption defines the caption of the logo image -->
+						<em>Artisan Flower Arrangements you will love</em> <!-- the em tag italizes the caption -->
+						</figcaption>
+				</figure>
+			</div>		
+			
+			<!-- Here we display the second nav menu, The one
+			that comes immediatelyafter the logo. Hover over these
+			items and you get some color change and italic effects -->
+			<nav>
+				<ul>
+                    <li class="link"><a href="product.html">Home</a></li>
+                    <li class="link"><a href="#">About Us</a></li>
+                    <li class="link"><a href="product.html">Buy Online</a></li>
+                    <li class="link"><a href="#">Weddings</a></li>
+                    <li class="link"><a href="#">Contact Us</a></li>
+                </ul>
+			</nav>
+			
+        </header>
+		<!-- The end of the header part -->
+		
+				<!-- Now let's move to the main section of the website. Quick. Quick. -->
+        <main>
+            <h1>Checkout</h1>
+			
+			<!-- Below I have created an opening form tag with a fieldsets in it -->
+            <form action="/checkout.php">
+                
+				<!-- This is the first fieldset. Contacts the delivery information fields. -->
+				<fieldset>
+                    <!-- The legend is that heading guy between the
+					border box that encloses the fieldset
+					it is a stylish for of headlining stuffs -->
+					<legend><h3>Delivery Information</h3></legend>
+				
+					<ol>		
+						<li>
+							<label for="date">Delivery date:</label>
+							<input type="date" id="date" name="delivery-date">
+						</li>
+						
+						<li>
+                            <label for="myTextArea">Special Delivery Instructions:</label>
+                            <textarea id="myTextArea" name="myTextArea" cols="50" rows="4"></textarea>
+						</li>
+						
+                        <li>
+							<label for="firstname">Recipient Firstname:</label>
+							<input type="text" id="firstname" name="first-name">
+						</li>
+						
+						<li>
+							<label for="surname">Recipient Surname:</label>
+							<input type="text" id="surname" name="surname">
+						</li>
+						
+						<li>
+							<label for="address1">Address 1:</label>
+                            <input type="text" id="address1" name="first-address">
+						</li>
+						
+						<li>
+                            <label for="address2">Address 2:</label>
+                            <input type="text" id="address2" name="second-address">
+						</li>
+						
+						<li>
+                            <label for="town">Town/City:</label>
+                            <input type="text" id="town" name="town-City">
+						</li>
+						
+						<li>
+                            <label for="country">Country:</label>
+                            <input type="text" id="country" name="country">
+						</li>
+						
+						<li>
+                            <label for="eircode">Eircode:</label>
+                            <input type="text" id="eircode" name="eircode">
+						</li>
+						
+						<li>
+                            <label for="cardmessage">Card Message:</label>
+							
+							<!-- This is the description at the top of the Card Message textarea...
+							Added small and em tag to description to distinguish it from the labels -->
+							<span><small><em>For example: Happy Birthday, Have a fabulous day love Kevin</em></small>
+							
+							<br/><textarea id="cardmessage" name="cardmessage" cols="50" rows="4"></textarea><br/></span>
+							
+						</li>
+				</ol>
+                </fieldset>
+            </form>
+			
+			
+			<!-- Below is the second half of the form that contains
+			card information and so on. The form action leads to the
+			same chechout.php that the first part of the form leads to-->
+            <form action="/checkout.php">
+                <fieldset class="alt">
+                    <legend><h3>Payment Information</h3></legend>
+                    <h4 class="credit">Credit card</h4>
+
+                    <ol>    
+                    <li>
+						<label for="cardname">Name on card</label>
+                        <input type="text" id="cardname" name="Consumer-card-name">
+					</li>
+
+					<li>
+                        <label>Credit Card Type</label>
+						
+                        <span>
+                        <input type="radio" id="visa" name="visa-card" value="K">Visa
+						</span>
+						
+						<br/>
+						
+                        <span><input type="radio" id="mastercard" name="visa-card" value="Q">Mastercard
+						</span>
+						
+                    </li>
+
+					<li>					
+                        <label for="cardnumber">Card Number</label>
+                        <input type="text" id="cardnumber" name="credit-card-number">
+					</li>
+					
+					<li>
+                        <label for="expiry">Expiry</label>
+                        <input type="date" id="expiry" name="expiry-date">
+                    </li>
+
+					<li>
+                        <label for="vernumber">Card Verification number</label>
+                        <input type="text" id="vernumber" name="card-verification-no">
+                    </li>
+
+					<li>
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email-address">
+                    </li>
+
+					<li>
+                        <label for="phone">Phone</label>
+                        <input type="number" id="phone" name="phone-number">
+                    </li>
+				</ol>	
+                </fieldset>
+
+				<!-- This is the styling for the submit button. I have used the flexbox to float it to right of container. -->
+				<fieldset class="submit">
+				<div class="footie-container">
+					<div class = "order-button">
+						<a href="checkout.php">Place Order</a>
+					</div>
+				</div>
+				</fieldset>
+				
+                </form>
+        
+            
+        </main>
+		<!-- The end of the main segment. We have come a long way. -->
+
+<!-- Now that we are done with main. We move to the footer section. -->
+<footer class="homie">
+        <div class="footie-container">
+			
+			<div><i class="fab fa-twitter"> <a href="https://twitter.com/millflowers">@millflowers</a></i></div>
+			
+        </div>
+</footer>
+    </div>
+	<!-- The end of the footer section -->
+	
+</body>
+<!-- Closing the body tag -->
+
+</html>

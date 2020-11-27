@@ -1,0 +1,326 @@
+html{
+    box-sizing: border-box;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+header {
+	margin-bottom: 20px; /*add marging to the header area so there is space before the body content*/
+}
+
+/* Adding styling to general body of webpage
+The recommended font families are used
+The recommended colour is used too etc*/
+body{
+    margin: 0;
+    color: #7A7C7D;
+    font-family: Helvetica Neue, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    background-color: white;
+    text-align: left;
+}
+
+/*The following codes style the footer
+fab icons link and the header fas phone
+number and email links*/
+.fab, .fas {
+	color: #A0C33F;
+	text-decoration: none;
+}
+.fab a, .fas a {
+	text-decoration: none;
+	font-size:	1em;
+}
+.fab a:hover, .fas a:hover {
+	font-style: italic;
+}
+
+
+/* Adding styling to the link element of webpage */
+body a{
+	font-family: Helvetica Neue, Helvetica, sans-serif;
+	color: #7A7C7D;
+	font-weight: 400;
+}
+
+.logo {
+	/*adding figure tag to the logo added some
+	unnecessary margin to it. This little line removes that
+	unnecessary margin peacefully*/
+	margin-left:0;
+}
+
+/*The caption of the logo is being transformed
+to uppercase. it also carries a custom font size
+so that it does not look too big*/
+figcaption {
+	text-transform: uppercase;
+	font-size: 0.8em;
+}
+	
+/* Further styling to the general body
+element with class "wrapper" */
+.wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+/* Styling for checkout page elements */
+.Checkout {
+	margin:10px;
+}
+
+/* The following style elements in the top bar area of the web page
+That is the green top bar and the menu floated right*/
+.contact{
+    background-color: #A0C33F;
+	padding: 5px;
+}
+
+.contact li{
+    list-style-type: none;
+	float:right;
+}
+
+.top-line {
+	float:right;
+	margin: 5px 0 5px 0;
+	font-size: 14px;
+}
+
+.contact a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.test{
+    margin: 0px 10px 0px 4px;
+    padding: 0px 10px 0px 10px;
+}
+
+/* Below are styling for some container elements used across the webpage.
+Flexbox CSS is used for easy floating of elements.*/
+.itemie-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.footie-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.topie-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.mainie-container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* The below styling is applied to inner elements of
+the containers already styled above */
+.itemie {
+	border-style: solid;
+	border-width: 2px;
+	border-color: #A0C33F;
+	margin: 5px;
+	padding: 5px;
+	/*this little line helps us to maintain a
+	uniform size for product images in the
+	'You may also like' area*/
+	max-width: 296px;
+}
+
+.itemie img {
+  width: 100%;
+  height: auto;
+}
+
+.topie {
+	margin-left: 5px;
+}
+
+
+.footie {
+	margin-left: 5px;
+}
+
+.mainoe {
+	float:right;
+}
+
+.homie {
+	margin: 5px 0 20px 0;
+}
+
+/* Adding responsiveness to the mainie-container\
+This is not really need haha but I added it anyway
+BECAUSE I CAN, SO WHY NOT HAHA
+*/
+@media (max-width: 800px) {
+  .mainie-container {
+    flex-direction: column;
+  }
+}
+
+/* Adding responsiveness to the itemie-container
+This is not really need haha but I added it anyway
+BECAUSE I CAN, SO WHY NOT HAHA
+*/
+@media (max-width: 800px) {
+  .itemie-container {
+    flex-direction: column;
+  }
+}
+
+/* Styling the order and place order buttons
+to make them look green and chic */
+.order-button {
+  background-color: #A0C33F;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.order-button a {
+	/*this line tells the text on order and place order
+	button to inherit the body text color and then remove
+	the default underline decoration by settingn text
+	decoration to none */
+	text-decoration: none;
+	color: inherit;
+}
+
+/* Styling the header tags for color and font
+The instruction is to make them green and in
+Georgia font family with a serif backup*/
+h1,h2,h3,h4,h5,h6 {
+	color: #A0C33F;
+	font-family: Georgia, serif
+}
+
+/* Styling the list elements of the webpage */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Float list elements to left */
+li {
+  float: left;
+}
+
+/* This section defines what happens to list element links */
+li a {
+  display: inline;
+  color: #A0C33F;
+  text-align: left;
+  padding: 16px 16px 16px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size:14px;
+}
+
+/* What happens when a list element link is hovered upon? */
+li a:hover {
+  color: #111111;
+  font-style: italic;
+}
+
+/* What happens when a list element link is active? */
+li a:active {
+  color: #111111;
+  font-style: italic;
+}
+
+fieldset
+{
+  float: left;
+  clear: left;
+  width: 100%;
+}
+
+/* We begin styling the checkout form and its fields
+legend is title of each column of fieldset */
+legend {
+  margin-left: 1em;
+  color: #000000;
+  font-weight: bold;
+}
+
+/* All fields in the form are wrapped in a an ordered list styled thus */
+fieldset ol {
+  list-style: none;
+  zoom: 1;
+}
+
+/*Each field is a list item and styled thus*/
+fieldset li 
+{
+  float: left;
+  clear: left;
+  width: 100%;
+}
+
+/*the labels are styled thus*/
+label
+{
+  float: left;
+  /*this 3 lines below will define the width of
+  the labels so we have a uniform startpoint for
+  the input fields*/
+  width: 15em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+/*this is extra styling for the submit button
+this button already inherited some styling from
+the order-button class styling above.*/
+
+fieldset.submit
+{
+  float: none;
+  width: auto;
+  border: 0 none #FFFFFF;
+}
+
+/*the following lines add border attributes
+color, width, style... to all the input types
+in the form*/
+
+input[type=text] {
+  border: 1px solid #A0C33F;
+}
+input[type=date] {
+  border: 1px solid #A0C33F;
+}
+input[type=radio] {
+  border: 1px solid #A0C33F;
+}
+input[type=number] {
+  border: 1px solid #A0C33F;
+}
+
+textarea {
+  border: 1px solid #A0C33F;
+}

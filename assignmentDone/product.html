@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
+    <script src="https://kit.fontawesome.com/ac610dfd2d.js" crossorigin="anonymous"></script>
+    <title>Product page</title>
+</head>
+
+<!-- This is the body tag that contains most of the elements visible in the webpage -->
+<body>
+    <div class="wrapper">
+        <!-- We start with the header elements. Contains all the nav menus and the logo, etc -->
+		<header>
+            
+			<!-- An unordered list to display the first nav menu -->
+			<nav class="contact">
+				<ul>
+                    <li><a href="#" class="test">Basket</a></li>
+                    <li><a href="checkout.html" class="test">Checkout</a></li>
+					<li><a href="#" class="test">My Account</a></li>
+                 </ul>
+            </nav>
+			
+			<!-- Here is the HTML code that displays the phone number and
+			the email. Click on any one of them and you are taken to the
+			appropriate action. -->
+            <div class="top-line">
+					<i class="fas fa-mobile-alt"> <a href="tel:+353(0)614486165">  +353(0)614486165</a></i>  <i class="fas fa-at">  <a href="mailto:info@millflowers.ie">  info@millflowers.ie</a></i>
+			</div>
+			               
+			<!-- Here is the webpage logo using the figure and
+			figcaption tag to define the photo and its caption						    -->
+			<div class="mainie">
+                <figure class="logo">
+					<img src="images/logo3.png">
+						<figcaption> <!-- The figcaption defines the caption of the logo image -->
+						<em>Artisan Flower Arrangements you will love</em> <!-- the em tag italizes the caption -->
+						</figcaption>
+				</figure>
+			</div>		
+			
+			<!-- Here we display the second nav menu, The one
+			that comes immediatelyafter the logo. Hover over these
+			items and you get some color change and italic effects -->
+			<nav>
+				<ul>
+                    <li class="link"><a href="product.html">Home</a></li>
+                    <li class="link"><a href="#">About Us</a></li>
+                    <li class="link"><a href="product.html">Buy Online</a></li>
+                    <li class="link"><a href="#">Weddings</a></li>
+                    <li class="link"><a href="#">Contact Us</a></li>
+                </ul>
+			</nav>
+			
+        </header>
+		<!-- The end of the header part -->
+		
+		<!-- Now let's move to the main section of the website. Quick. Quick. -->
+		<main>
+					<div class="mainie-container">
+						
+						<!-- This is the container displaying the product image -->
+						<div class="mainie">
+						
+						<img src="images/lily500.png" alt="lily">
+						
+						</div>
+
+						<!-- This is the container displaying the product description -->
+						<div class="mainie">
+						
+							<h1>Vibrant Lily Basket</h1>
+							
+							<p>Vibrant orange asiatic lilies in a wicker basket</p>
+
+							<p>These flowers are naturally complemented by the deep green shades of oregonia and nestled in a reusable rustic wicker basket - sure to add an inviting touch to any space!</p>
+
+							<p>Price: €49.99</p>
+
+							<hr>
+							
+							<!-- This part displays the order select drop down as well as the Order Now button -->
+							<div>
+							
+							 <h4>Choose delivery or pickup</h4>
+							</div>
+							
+							<div>
+								<span>Order Type</span>
+									<select id="dropDownChoices" name="dropDownChoices">
+										<option>Dispatch</option>
+										<option selected>Delivery</option>
+										<option>Missing</option>
+									</select>
+							</div>
+							
+							<div class="footie-container">
+							
+								<div class = "order-button">
+									<a href="checkout.html">Order Now</a>
+								</div>
+							
+							</div>
+						
+						</div>
+
+					</div>
+					
+					<!-- Now, this section displays the Related Items for cross selling to customers -->
+					<div>
+					
+					<h3>You may also like</h3>
+					
+					</div>
+					
+					<div class="itemie-container">
+						
+						<div class="itemie"><p><strong>White bouquet</strong></p><img src="images/white400_square.png" alt="White bouquet"></div>
+
+						<div class="itemie"><p><strong>Orange bouquet</strong></p><img src="images/gift.png"  alt="Orange bouquet"></div>
+
+						<div class="itemie"><p><strong>Tulip bouquet</strong></p><img src="images/tulips_square.png" alt="Tulip bouquet"></div>
+
+						<div class="itemie"><p><strong>Small bouquet</strong></p><img src="images/wedding_Square.jpg" alt="Small bouquet"></div>
+					</div>
+				
+		</main>
+		<!-- The end of the main segment. We have come a long way. -->
+
+<!-- Now that we are done with main. We move to the footer section. -->
+<footer class="homie">
+        <div class="footie-container">
+			
+			<div><i class="fab fa-twitter"> <a href="https://twitter.com/millflowers">@millflowers</a></i></div>
+			
+        </div>
+</footer>
+				<!-- The end of the footer section -->
+    </div>
+	
+</body>
+<!-- Closing the body tag -->
+
+
+</html>
